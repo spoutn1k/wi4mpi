@@ -58,6 +58,7 @@
 
 #define MPI_AINT_ADD_OVERRIDE
 #define MPI_AINT_DIFF_OVERRIDE
+#define MPI_UNWEIGHTED_OVERRIDE
 
 /* user include file for MPI programs */
 #if !defined(_WIN32) && !defined(_WIN64)  /* Linux only */

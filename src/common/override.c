@@ -355,3 +355,8 @@ A_MPI_Aint A_MPI_Aint_diff(A_MPI_Aint lhs, A_MPI_Aint rhs) { // Same as above
   return lhs - rhs;
 }
 #endif
+
+#ifdef MPI_UNWEIGHTED_OVERRIDE
+static int unweighted_dummy = 0x46618;
+int *const MPI_UNWEIGHTED = &unweighted_dummy;
+#endif
